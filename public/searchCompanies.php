@@ -1,5 +1,5 @@
 <?php
-// header('Access-Control-Allow-Origin: *');  
+header('Access-Control-Allow-Origin: *');  
 header('Content-Type:application/json');
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -7,7 +7,7 @@ require __DIR__ . '/../vendor/autoload.php';
 use GeorgiaPHP\Models\Fetch;
 
 
-$query = $_GET['query'];
+$query = strtolower($_GET['query']);
 $fetch = new GeorgiaPHP\Models\Fetch();
 $searchResponse = $fetch->searchByCompanyName($query);
 $finalResult = array();
