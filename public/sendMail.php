@@ -1,8 +1,8 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Credentials: true');
-header('Access-Control-Allow-Headers "origin, x-requested-with, content-type"');
-header('Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"');
+// header('Access-Control-Allow-Credentials: true');
+// header('Access-Control-Allow-Headers "origin, x-requested-with, content-type"');
+// header('Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"');
 // using SendGrid's PHP Library
 // https://github.com/sendgrid/sendgrid-php
 // If you are using Composer (recommended)
