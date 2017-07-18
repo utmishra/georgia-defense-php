@@ -15,6 +15,6 @@ $subject = "Georgia Defense Exchange | New Message from " . $_POST['fromName'];
 $to = new SendGrid\Email($_POST['toName'], $_POST['to-email']);
 $content = new SendGrid\Content("text/html", $body);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
-$sg = new \SendGrid('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');
+$sg = new \SendGrid('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');
 $response = $sg->client->mail()->send()->post($mail);
 print_r($response);
